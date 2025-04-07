@@ -26,38 +26,38 @@ A powerful NCM Downloader that supports built-in metadata (title, artists, album
 
 ## 📷 ScreenShots
 使用本项目下载音乐上传至Navidrome形成的海报墙：
-![](./Screenshot09.png)
+![](assest/Screenshot09.png)
 
 音流APP：
-![](./Screenshot10.png)
+![](assest/Screenshot10.png)
 
-![](./Screenshot01-1.png)
+![](assest/Screenshot01-1.png)
 
 新版样式（v1.5.0及以上）：
 
-![](./Screenshot01-2.png)
+![](assest/Screenshot01-2.png)
 
-![](./Screenshot02.png)
+![](assest/Screenshot02.png)
 
 v1.7.0：
 
-![](./Screenshot11.png)
+![](assest/Screenshot11.png)
 
-![](./Screenshot03.png)
+![](assest/Screenshot03.png)
 
-![](./Screenshot04.png)
+![](assest/Screenshot04.png)
 
 v1.1.0及以上支持下载歌词，使用支持读取歌词文件的播放器打开即可（图为Dopamine）：
 
-![](./Screenshot05.png)
+![](assest/Screenshot05.png)
 
-![](./Screenshot06.png)
+![](assest/Screenshot06.png)
 
 v1.5.0及以上支持同时获取原始歌词和翻译歌词，并且支持内嵌歌词和歌词文件两种模式
 
-![](./Screenshot07.png)
+![](assest/Screenshot07.png)
 
-![](./Screenshot08.png)
+![](assest/Screenshot08.png)
 
 ## 🔨 Usage
 Clone this project

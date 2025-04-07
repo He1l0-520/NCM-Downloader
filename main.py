@@ -29,11 +29,11 @@ lrc = 0
 
 init() # colorma
 print(Fore.GREEN + "  _   _  _____ __  __   _____   ______          ___   _ _      ____          _____  ______ _____  ")
-print(" | \ | |/ ____|  \/  | |  __ \ / __ \ \        / / \ | | |    / __ \   /\   |  __ \|  ____|  __ \ ")
-print(" |  \| | |    | \  / | | |  | | |  | \ \  /\  / /|  \| | |   | |  | | /  \  | |  | | |__  | |__) |")
-print(" | . ` | |    | |\/| | | |  | | |  | |\ \/  \/ / | . ` | |   | |  | |/ /\ \ | |  | |  __| |  _  / ")
-print(" | |\  | |____| |  | | | |__| | |__| | \  /\  /  | |\  | |___| |__| / ____ \| |__| | |____| | \ \ ")
-print(" |_| \_|\_____|_|  |_| |_____/ \____/   \/  \/   |_| \_|______\____/_/    \_\_____/|______|_|  \_\\" + Style.RESET_ALL)
+print(r" | \ | |/ ____|  \/  | |  __ \ / __ \ \        / / \ | | |    / __ \   /\   |  __ \|  ____|  __ \ ")
+print(r" |  \| | |    | \  / | | |  | | |  | \ \  /\  / /|  \| | |   | |  | | /  \  | |  | | |__  | |__) |")
+print(r" | . ` | |    | |\/| | | |  | | |  | |\ \/  \/ / | . ` | |   | |  | |/ /\ \ | |  | |  __| |  _  / ")
+print(r" | |\  | |____| |  | | | |__| | |__| | \  /\  /  | |\  | |___| |__| / ____ \| |__| | |____| | \ \ ")
+print(r" |_| \_|\_____|_|  |_| |_____/ \____/   \/  \/   |_| \_|______\____/_/    \_\_____/|______|_|  \_\ " + Style.RESET_ALL)
 print("Github: https://github.com/xxynet/NCM-Downloader")
 print("Docs: https://ncm.xuxiny.top/")
 print("Programmed by Caleb XXY")
@@ -82,7 +82,7 @@ try:
 
     bool_lrc = config.get('output','lrc')
 
-    with open("cookie.txt", "r") as cookie_file:
+    with open("cookie.txt", "r", encoding='utf-8') as cookie_file:
         cookie = cookie_file.read()
 
     if cookie:
@@ -203,7 +203,7 @@ class Playlist:
 
         if response.ok:
             data = response.json()
-            # print(data) # DEBUG
+            print(data) # DEBUG
             try:
                 self.tracks = jsonpath.jsonpath(data, "$.[tracks]")[0]
                 self.playlist_song_amount = len(self.tracks)
