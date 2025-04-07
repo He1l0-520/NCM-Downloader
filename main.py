@@ -203,7 +203,7 @@ class Playlist:
 
         if response.ok:
             data = response.json()
-            # print(data) # DEBUG
+            print(data) # DEBUG
             try:
                 self.tracks = jsonpath.jsonpath(data, "$.[tracks]")[0]
                 self.playlist_song_amount = len(self.tracks)
